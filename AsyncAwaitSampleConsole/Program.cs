@@ -52,8 +52,8 @@ namespace AsyncAwaitSampleConsole
                     //await Task.Delay(sleepMilliSeconds);
                     Task t = Task.Delay(sleepMilliSeconds);
                     await t;
-                    
-                    Console.WriteLine($"Task{num:00}: Iteration{i:00} End");
+
+                    Console.WriteLine($"Task{num:00}: Iteration{i + 1:00} End");
 
                     //await t;
                 }
